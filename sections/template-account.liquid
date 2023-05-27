@@ -4,7 +4,7 @@
 
   <div class="max-w-6xl mx-auto justify-between items-center px-4">
     <div class="grid grid-cols-2">
-      <div class="mt-2 px-2 w-40">
+      <div class="mt-2 px-2 w-auto">
         <h6>Account details</h6>
         {{ customer.default_address | format_address }}
 
@@ -14,7 +14,7 @@
       <div class="mt-2 px-2">
         {% if customer.orders.size > 0 %}
 
-          <table class="table-fixed border-collapse border border-slate-800 w-80%">
+          <table class="table-fixed border-collapse border border-slate-800 w-auto">
             <thead>
               <tr>
                 <th class="border border-slate-600">Order #</th>

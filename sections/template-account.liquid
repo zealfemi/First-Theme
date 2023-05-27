@@ -13,7 +13,19 @@
 
       <div class="w-80">
         <div class="">
-          {% if customer.orders.size > 0 %}{% endif %}
+          {% if customer.orders.size > 0 %}
+            <table class="border">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+              </thead>
+            </table>
+          {% endif %}
         </div>
       </div>
     </div>

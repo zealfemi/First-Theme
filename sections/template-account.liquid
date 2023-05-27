@@ -11,22 +11,20 @@
         <a href="{{ routes.account_addresses_url }}" class="text-sm text-gray-500">View addresses</a>
       </div>
 
-      <div class="">
-        <div class="mx-2 px-2 py-4">
-          {% if customer.orders.size > 0 %}
-            <table class="table-auto border">
-              <thead>
-                <tr>
-                  <th class="border border-slate-500">Order #</th>
-                  <th class="border border-slate-500">Fullfilment Status</th>
-                  <th class="border border-slate-500">Payment Status</th>
-                  <th class="border border-slate-500">Order Date</th>
-                  <th class="border border-slate-500">Total</th>
-                </tr>
-              </thead>
-            </table>
-          {% endif %}
-        </div>
+      <div class="mx-2 px-2 py-4">
+        {% if customer.orders.size > 0 %}
+          <table class="table-auto border">
+            <thead>
+              <tr>
+                <th class="border border-slate-500">Order #</th>
+                <th class="border border-slate-500">Fullfilment Status</th>
+                <th class="border border-slate-500">Payment Status</th>
+                <th class="border border-slate-500">Order Date</th>
+                <th class="border border-slate-500">Total</th>
+              </tr>
+            </thead>
+          </table>
+        {% endif %}
       </div>
     </div>
   </div>

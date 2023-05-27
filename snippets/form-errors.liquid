@@ -9,14 +9,10 @@
     <ul class="px-4 mb-3 ml-7 list-decimal">
       {% for error in form.errors %}
         {% if error == 'form' %}
-          <li>
-            <span>{{ form.errors.messages[error] }}</span>
-          </li>
+          <span>{{ form.errors.messages[error] }}</span>
 
         {% else %}
-          <li>
-            <span>{{ form.errors.translated_fields[errors] }} {{ form.errors.messages[error] }}</span>
-          </li>
+          <span>{{ form.errors.translated_fields[errors] }} {{ form.errors.messages[error] }}</span>
         {% endif %}
       {% endfor %}
     </ul>

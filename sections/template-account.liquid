@@ -11,7 +11,11 @@
         <a href="{{ routes.account_addresses_url }}" class="text-sm text-gray-500">View addresses</a>
       </div>
 
-      <div class="w-80">here</div>
+      <div class="w-80">
+        <div class="">
+          {% if customer.orders.size > 0 %}{% endif %}
+        </div>
+      </div>
     </div>
   </div>
 </div>

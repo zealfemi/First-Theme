@@ -1,1 +1,36 @@
-{% form 'product', product %}{% endform %}
+<div class="flex flex-col items-center my-8">
+
+  {% form 'create_customer' %}
+    <h1 class="text-3xl text-center font-medium my-8 md:my16">Login</h1>
+
+    {% render 'form-errors', form: form %}
+
+    <div class="max-w-6xl mx-auto justify-center flex-1 items-center px-4">
+
+      <div class="px-3 mb-3">
+        <label for="emailAddress" class="uppercase text-xs text-gray-500 font-medium">Email Address</label>
+        <input
+          type="email"
+          name="customer[email]"
+          id="emailAddress"
+          class="border py-3 px-4 mb-3 text-gray-700 w-full">
+      </div>
+
+      <div class="px-3 mb-3">
+        <label for="password" class="uppercase text-xs text-gray-500 font-medium">Password</label>
+        <input
+          type="password"
+          name="customer[password]"
+          id="password"
+          class="border py-3 px-4 mb-3 text-gray-700 w-full">
+      </div>
+
+      <input
+        type="submit"
+        value="Login"
+        class="w-full cursor-pointer px-4 py-2 border text-base font-medium bg-gray-900 text-white hover:bg-gray-700">
+
+    </div>
+  {% endform %}
+
+</div>

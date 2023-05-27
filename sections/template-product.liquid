@@ -164,6 +164,24 @@
   </div>
 </div>
 
+
+
+<script>
+  const swiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    loop: true,
+
+    pagination: {
+      el: '.swiper-pagination'
+    },
+
+    navigation: {
+      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-next'
+    }
+  })
+</script>
+
 <script>
   class VariantSelector extends HTMLElement {
     constructor() {
@@ -260,22 +278,6 @@
   }
 
   customElements.define("variant-selector", VariantSelector);
-</script>
-
-<script>
-  const swiper = new Swiper('.swiper', {
-    direction: 'horizontal',
-    loop: true,
-
-    pagination: {
-      el: '.swiper-pagination'
-    },
-
-    navigation: {
-      prevEl: '.swiper-button-prev',
-      nextEl: '.swiper-button-next'
-    }
-  })
 </script>
 
 {% schema %}

@@ -2,7 +2,10 @@
   <h1 class="text-3xl font-medium my-8 md:my16">Login</h1>
 
   {% form 'customer_login' %}
-    <div class="">
+    <div class="max-w-6xl mx-auto justify-center flex-1 items-center px-4">
+      <div class="flex px-1 mb-3">
+
+        <div class="px-3 md:w-1/2">
       <label for="emailAddress" class="text-gray-500 ">Email Address</label>
       <input
         type="email"
@@ -17,6 +20,7 @@
         class="">
 
       <input type="submit" value="Login">
+    </div>
     </div>
   {% endform %}
 

@@ -3,28 +3,14 @@
     <a href="{{ products_card.url }}">
 
       {% if products_card.featured_image %}
-        <div class="sm:hidden">
-          <div class="sm:hidden h-80 overflow-hidden">
-            <img
-              class="w-full h-full object-cover transition duration-1000 ease-in-out hover:scale-105 transform"
-              src="{{ products_card.featured_image | img_url: 'medium' }}"
-              alt="{{ products_card.featured_image.alt }}"
-              width="{{ products_card.featured_image.width }}"
-              height="{{ products_card.featured_image.height }}"
-              loading="lazy" />
-          </div>
-
-        </div>
-        <div class="md:hidden">
-          <div class="md:hidden h-80 overflow-hidden">
-            <img
-              class="w-full h-full object-contain transition duration-1000 ease-in-out hover:scale-105 transform"
-              src="{{ products_card.featured_image | img_url: 'medium' }}"
-              alt="{{ products_card.featured_image.alt }}"
-              width="{{ products_card.featured_image.width }}"
-              height="{{ products_card.featured_image.height }}"
-              loading="lazy" />
-          </div>
+        <div class="h-80 overflow-hidden">
+          <img
+            class="w-full h-full object-cover transition duration-1000 ease-in-out hover:scale-105 transform"
+            src="{{ products_card.featured_image | img_url: 'medium' }}"
+            alt="{{ products_card.featured_image.alt }}"
+            width="{{ products_card.featured_image.width }}"
+            height="{{ products_card.featured_image.height }}"
+            loading="lazy" />
         </div>
       {% else %}
         {{ 'product-1' | placeholder_svg_tag: 'w-full h-full object-cover bg-gray-100 transition duration-1000 ease-in-out hover:scale-105 transform' }}

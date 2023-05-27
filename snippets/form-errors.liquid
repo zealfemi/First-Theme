@@ -8,8 +8,9 @@
 
     <ul class="px-4 mb-3 ml-7 list-decimal">
       {% for error in form.errors %}
-
-        <span>{{ form.errors.translated_fields[errors] }} {{ form.errors.messages[error] }}</span>
+        <li>
+          <span>{{ form.errors.translated_fields[errors] }} {{ form.errors.messages[error] }}</span>
+        </li>
       {% endfor %}
     </ul>
 

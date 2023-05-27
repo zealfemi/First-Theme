@@ -1,17 +1,18 @@
 {% form 'customer_login' %}
-  <div class="grid grid-cols-1 md:grid-cols-2"></div>
-  <label for="emailAddress">Email Address</label>
-  <input
-    type="email"
-    name="customer[email]"
-    id="emailAddress">
+  <div class="grid grid-cols-1 md:grid-cols-2">
+    <label for="emailAddress">Email Address</label>
+    <input
+      type="email"
+      name="customer[email]"
+      id="emailAddress">
 
-  <label for="password" class="">Password</label>
-  <input
-    type="password"
-    name="customer[password]"
-    id="password"
-    class="">
+    <label for="password" class="">Password</label>
+    <input
+      type="password"
+      name="customer[password]"
+      id="password"
+      class="">
 
-  <input type="submit" value="Login">
+    <input type="submit" value="Login">
+  </div>
 {% endform %}

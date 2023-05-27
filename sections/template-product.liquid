@@ -62,6 +62,8 @@
 
     <div class="product--information sticky top-5 p-2">
       {% form 'product', product, id: 'product-form', novalidate: 'novalidate' %}
+        {% render 'form-errors', form: form %}
+
         <input
           type="hidden"
           name="id"

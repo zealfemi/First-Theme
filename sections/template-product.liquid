@@ -4,10 +4,24 @@
 {% assign selected_variant = product.selected_or_first_available_variant %}
 
 <style>
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: black;
+    top: auto;
+    height: 20px;
+  }
 
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 20px;
+  }
 
-  .product--information {
-    height: fit-content;
+  .swiper-pagination {
+    bottom: 0 !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: black !important;
   }
 </style>
 

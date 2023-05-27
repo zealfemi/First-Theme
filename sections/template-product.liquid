@@ -28,7 +28,7 @@
     height: fit-content;
   }
 
-  .swiper-pic {
+  .swipper-pic {
     object-fit: contain;
   }
 </style>
@@ -49,7 +49,7 @@
           <div class="swiper-wrapper">
             {% for media in product.media %}
               <div class="swiper-slide">
-                <div class="swiper-pic object-contain w-full h-full overflow-hidden p-2 mb-2">
+                <div class="swiper-pic w-full h-full overflow-hidden p-2">
                   {% render 'product-media', media: media %}
                 </div>
               </div>

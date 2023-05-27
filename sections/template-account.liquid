@@ -7,6 +7,8 @@
       <div class="w-40">
         <h6>Account details</h6>
         {{ customer.default_address | format_address }}
+
+        <a href="{{ routes.account_addresses_url }}">View addresses</a>
       </div>
 
       <div class="w-80">here</div>

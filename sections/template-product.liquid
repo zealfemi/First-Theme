@@ -41,11 +41,11 @@
       </div>
 
       <div class="md:hidden">
-        <div class="swiper">
+        <div class="swiper h-94">
           <div class="swiper-wrapper">
             {% for media in product.media %}
               <div class="swiper-slide">
-                <div class="overflow-hidden p-2">
+                <div class="h-full overflow-hidden p-2">
                   {% render 'product-media', media: media %}
                 </div>
               </div>

@@ -1,18 +1,23 @@
-{% form 'customer_login' %}
-  <div class="grid grid-cols-1 items-center text-center max-w-6xl">
-    <label for="emailAddress" class="text-gray-500 ">Email Address</label>
-    <input
-      type="email"
-      name="customer[email]"
-      id="emailAddress">
+<div class="flex flex-col items-center my-8">
+  <h1 class="text-3xl font-medium my-8 md:my16">Login</h1>
 
-    <label for="password" class="">Password</label>
-    <input
-      type="password"
-      name="customer[password]"
-      id="password"
-      class="">
+  {% form 'customer_login' %}
+    <div class="grid grid-cols-1 items-center text-center max-w-6xl">
+      <label for="emailAddress" class="text-gray-500 ">Email Address</label>
+      <input
+        type="email"
+        name="customer[email]"
+        id="emailAddress">
 
-    <input type="submit" value="Login">
-  </div>
-{% endform %}
+      <label for="password" class="">Password</label>
+      <input
+        type="password"
+        name="customer[password]"
+        id="password"
+        class="">
+
+      <input type="submit" value="Login">
+    </div>
+  {% endform %}
+
+</div>

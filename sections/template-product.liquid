@@ -27,10 +27,6 @@
   .product--information {
     height: fit-content;
   }
-
-  .swipper-pic {
-    object-fit: fill;
-  }
 </style>
 
 <div class="max-w-6xl mx-auto my-8">
@@ -49,7 +45,7 @@
           <div class="swiper-wrapper">
             {% for media in product.media %}
               <div class="swiper-slide">
-                <div class="swiper-pic overflow-hidden p-2">
+                <div class="w-full h-full overflow-hidden p-2">
                   {% render 'product-media', media: media %}
                 </div>
               </div>

@@ -33,9 +33,12 @@
                     <a href="{{ order.customer_url }}" class="underline">{{ order.name }}</a>
                   </td>
                   <td class="border border-slate-600 px-2">
-                    <span class="bg-green-700 text-white px-1 rounded">{{ customer.addresses_count }}</span>
-                    {{ order.fulfillment_status_label }}</td>
-                  <td class="border border-slate-600 px-2">{{ order.financial_status_label }}</td>
+                    <span class="bg-green-700 text-white px-1 rounded">{{ order.fulfillment_status_label }}
+                    </span>
+                  </td>
+                  <td class="border border-slate-600 px-2">
+                    <span class="bg-green-700 text-white px-1 rounded">{{ order.financial_status_label }}</span>
+                  </td>
                   <td class="border border-slate-600 px-2">{{ order.created_at | time_tag: format: 'date' }}</td>
                   <td class="border border-slate-600 px-2">{{ order.total_price }}</td>
                 </tr>

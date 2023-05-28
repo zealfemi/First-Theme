@@ -48,7 +48,7 @@
         ],
         "settings": {
           "col_num": 4,
-          "enable_payment_type_icons": false
+          "enable_payment_type_icons": true
         }
       },
       "translation": {

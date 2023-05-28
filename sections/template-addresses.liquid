@@ -1,17 +1,19 @@
 <div class="justify-center my-auto mx-8">
   <h1 class="text-3xl text-center mb-3">My Addresses</h1>
 
-  <button
-    data-bs-toggle="model"
-    data-bs-target="#newAddressModel"
-    class="bg-blue-500 text-white py-1 px-2">Create new address</button>
-  <div class="grid sm:grid-1 grid-2 my-5 gx-2">
-    {% for address in customer.addresses %}
-      <div class="">
+  <div class="max-w-6xl">
+    <button
+      data-bs-toggle="model"
+      data-bs-target="#newAddressModel"
+      class="bg-blue-500 text-white py-1 px-2">Create new address</button>
+    <div class="grid sm:grid-1 grid-2 my-5 gx-2">
+      {% for address in customer.addresses %}
         <div class="">
-          {{ address | format_address }}
+          <div class="">
+            {{ address | format_address }}
+          </div>
         </div>
-      </div>
-    {% endfor %}
+      {% endfor %}
+    </div>
   </div>
 </div>

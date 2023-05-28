@@ -9,7 +9,7 @@
             <ul class="list-unstyled text-small">
               {% for link in linklists[footer_linklist].links %}
                 <li>
-                  <a href="{{ link.url }}">{{ link.title | escape }}</a>
+                  <a href="{{ link.url }}" class="mb-1">{{ link.title | escape }}</a>
                 </li>
               {% endfor %}
             </ul>

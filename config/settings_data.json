@@ -29,22 +29,14 @@
             "type": "link_list",
             "settings": {
               "title": "Quick Links",
-              "menu": "main-menu"
-            }
-          },
-          "75522ee4-5b86-44bc-8d44-189ecb099b60": {
-            "type": "link_list",
-            "settings": {
-              "title": "Quick Links",
-              "menu": ""
+              "menu": "collections-menu"
             }
           }
         },
         "block_order": [
           "72ebf498-e755-497f-9b8b-f7ff32cf28da",
           "78a50f7f-c3d3-4daf-a6fd-1dccc81d51db",
-          "6710f7fa-122d-4ba7-924f-5fc407356b46",
-          "75522ee4-5b86-44bc-8d44-189ecb099b60"
+          "6710f7fa-122d-4ba7-924f-5fc407356b46"
         ],
         "settings": {
           "col_num": 4,

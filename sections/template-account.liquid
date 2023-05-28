@@ -28,7 +28,7 @@
               {% for order in customer.orders %}
                 <tr>
                   <td class="border border-slate-600 px-2">
-                    <a href="{{ order.customer_url }}" class="text-blue-500">{{ order.name }}</a>
+                    <a href="{{ order.customer_url }}" class="underline">{{ order.name }}</a>
                   </td>
                   <td class="border border-slate-600 px-2">{{ order.fulfillment_status_label }}</td>
                   <td class="border border-slate-600 px-2">{{ order.financial_status_label }}</td>

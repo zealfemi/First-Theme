@@ -1,7 +1,7 @@
 {
   "sections": {
     "template": {
-      "type": "template-account",
+      "type": "template-customer-account",
       "settings": {
       }
     }

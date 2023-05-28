@@ -1,6 +1,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
+<script src="{{ 'swiper-bundle.min.js' | asset_url }}" async></script>
+
 {% assign selected_variant = product.selected_or_first_available_variant %}
 
 <style>

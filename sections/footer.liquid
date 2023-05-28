@@ -4,7 +4,7 @@
         {% assign item = block.settings %}
         {% if block.type == "link_list" %}
           <div class="col">
-            <h5>{{ item.title }}</h5>
+            <h5 class="uppercase">{{ item.title }}</h5>
             {% assign footer_linklist = item.menu %}
             <ul class="list-unstyled text-small">
               {% for link in linklists[footer_linklist].links %}

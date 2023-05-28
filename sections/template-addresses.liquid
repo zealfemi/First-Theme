@@ -307,6 +307,7 @@
         return;
       
 
+
       deleteButtons.forEach(button => {
         button.addEventListener("click", function(e) {
           var url = this.dataset.url;
@@ -326,6 +327,7 @@
         return;
       
 
+
 // console.log(allAddressesSelector);
 
       allAddressesSelector.forEach(select => {
@@ -334,6 +336,7 @@
         if (! selectedCountry) 
           return;
         
+
 
         var provinces = selectedCountry.dataset.provinces;
         var arrayOfProvince = JSON.parse(provinces);
@@ -389,6 +392,7 @@
       if (addressesSelector.length < 1) 
         return;
       
+
 
       addressesSelector.forEach(select => {
         select.addEventListener('change', function(e) {

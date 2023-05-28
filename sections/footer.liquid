@@ -21,7 +21,8 @@
                 src="{{ item.logo | img_url: 'medium' }}"
                 class="mb-5"
                 width=""
-                height="">
+                height=""
+                loading="lazy">
             {% endif %}
             <h5 class="uppercase mb-2">{{ item.title }}</h5>
             <p>{{ item.description }}</p>
@@ -36,7 +37,8 @@
         <img
           src="{{ payment_type | payment_type_img_url }}"
           width=""
-          height="">
+          height=""
+          loading="lazy">
       {% endfor %}
     </div>
   {% endif %}

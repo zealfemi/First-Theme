@@ -17,7 +17,11 @@
           </div>
         {% else if block.type == "text" %}
           <div class="col">
-            <img src="{{ item.logo | img_url: 'medium' }}" class="mb-5">
+            <img
+              src="{{ item.logo | img_url: 'medium' }}"
+              class="mb-5"
+              width=""
+              height="">
             <h5>{{ item.title }}</h5>
             <p>{{ item.description }}</p>
           </div>

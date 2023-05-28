@@ -8,7 +8,9 @@
         <h6 class="font-medium">Account details</h6>
         {{ customer.default_address | format_address }}
 
-        <a href="{{ routes.account_addresses_url }}" class="text-sm text-gray-500">View addresses</a>
+        <a href="{{ routes.account_addresses_url }}" class="text-sm text-gray-500">View addresses
+          <span>{{ customer.addresses_count }}</span>
+        </a>
       </div>
 
       <div class="px-2 max-w-full mt-2">

@@ -5,7 +5,7 @@
     </div>
     <div class="mt-8">
       {% form 'customer_login' %}
-        {% render 'form-errors' %}
+        {% render 'form-errors', form: form %}
 
         <div class="my-2">
           <label for="email_address" class="sr-only">Email address</label>

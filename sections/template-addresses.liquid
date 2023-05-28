@@ -3,8 +3,8 @@
 
   <div class="flex flex-col">
     {% for address in customer.addresses %}
-      <div class="border">
-        <div class="">
+      <div class="">
+        <div class="border">
           {{ address | format_address }}
         </div>
       </div>

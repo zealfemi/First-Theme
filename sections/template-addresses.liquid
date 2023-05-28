@@ -17,4 +17,8 @@
   </div>
 </div>
 
-<div class="modal fade#newAddressModal" tabIndex="-1" aria-labelledby="newAddressModalLabel" aria-hidden="true"></div>
+<div class="modal fade#newAddressModal" tabIndex="-1" aria-labelledby="newAddressModalLabel" aria-hidden="true">
+  {% form 'customer_address', customer %}
+    
+  {% endform %}
+</div>

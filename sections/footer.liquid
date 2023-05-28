@@ -32,7 +32,7 @@
     </div>
   </div>
   {% if section.settings.enable_payment_type_icons %}
-    <div class="flex justify-center items-center">
+    <div class="flex justify-center text-center items-center">
       {% for payment_type in shop.enabled_payment_types %}
         <img
           src="{{ payment_type | payment_type_img_url }}"

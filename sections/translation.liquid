@@ -20,7 +20,7 @@
 </style>
 
 {% form 'localization', id: "#localization_form_tag", class: "dropup" %}
-  <div class="localeBtn">Translate</div>
+  <div class="localeBtn">{{ 'globe.png' | asset_url: 'small' }}</div>
   <div class="dropup-content">
     {% for locale in shop.published_locales %}
       <a href="#">{{ locale.endonym_name }}</a>

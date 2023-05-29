@@ -57,3 +57,13 @@
     name="locale_code"
     value="{{ form.current_locale.iso_code }}">
 {% endform %}
+
+<script>
+  var localeItem = document.querySelectorAll("#localeItem");
+
+  if (localeItem.length > 0) {
+    localeItem.forEach(item => {
+      item.addEventListener("click", (event) => {})
+    })
+  }
+</script>

@@ -16,7 +16,7 @@
       },
       {
         "type": "font_picker",
-        "id": "header_font_text",
+        "id": "header_text_font",
         "label": "Font",
         "default": "mono"
       }

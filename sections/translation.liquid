@@ -52,4 +52,8 @@
         lang="{{ locale.iso_code }}">{{ locale.endonym_name }}</a>
     {% endfor %}
   </div>
+  <input
+    type="hidden"
+    name="locale_code"
+    value="{{ form.current_locale.iso_code }}">
 {% endform %}

@@ -66,7 +66,7 @@
     localeItem.forEach(item => {
       item.addEventListener("click", (event) => {
         document.getElementById("localeCode").value = item.getAttribute("lang")
-        document.getElementById("localization_form_tag").submit
+        document.getElementById("localization_form_tag").submit()
       })
     })
   }

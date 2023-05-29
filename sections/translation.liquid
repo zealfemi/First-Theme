@@ -46,7 +46,10 @@
   <div class="localeBtn">{{ 'globe.png' | asset_img_url: '50x50' | img_tag }}</div>
   <div class="dropup-content">
     {% for locale in shop.published_locales %}
-      <a href="#">{{ locale.endonym_name }}</a>
+      <a
+        href="#"
+        id="localeItem"
+        lang="{{ locale.iso_code }}">{{ locale.endonym_name }}</a>
     {% endfor %}
   </div>
 {% endform %}

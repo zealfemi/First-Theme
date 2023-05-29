@@ -6,5 +6,20 @@
     "theme_author": "Mackie",
     "theme_documentation_url": "https:\/\/github.com\/zealfemi\/MackTesting",
     "theme_support_url": "https:\/\/github.com\/zealfemi\/MackTesting\/issues"
+  },
+  {
+    "name": "Typography",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Heading Styles"
+      },
+      {
+        "type": "font_picker",
+        "id": "header_font_text",
+        "label": "Font",
+        "default": "mono"
+      }
+    ]
   }
 ]

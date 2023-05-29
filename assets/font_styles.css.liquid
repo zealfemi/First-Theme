@@ -1,4 +1,4 @@
-{% assign font_header = settings.header_text_font %}{% assign font_body = settings.body_text_font %}{{ font_header | font_face}}{{ font_body | font_face}}h1,
+{% assign font_header = settings.header_text_font %}{% assign font_body = settings.body_text_font %}{{ font_header | font_face}}{{ font_body | font_face}}{% assign font_body_size = settings.body_font_size %}{{ font_header | font_face}}{{ font_body | font_face}}h1,
 h2,
 h3,
 h4,
@@ -14,4 +14,5 @@ body {
   font-family: {{ font_body.family }}
   , {{ font_body.fallback_families }}
   ;
+  font-size: {{ font_body.size }}
 }

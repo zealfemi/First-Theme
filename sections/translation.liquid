@@ -1,1 +1,8 @@
-{% form 'localization' %}{% endform %}
+{% form 'localization' %}
+  <div class="localeBtn">Translate</div>
+  <div class="dropup-content">
+    {% for locale in shop.published_locales %}
+      <a href="#">{{ locale.endonym_name }}</a>
+    {% endfor %}
+  </div>
+{% endform %}

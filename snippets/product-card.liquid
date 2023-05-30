@@ -1,6 +1,6 @@
 <div class="w-full">
   <div class="border bg-white shadow-lg rounded-lg overflow-hidden">
-    <a href="#" id="productInfoAnchor">
+    <a href="{{ products_card.url }}">
 
       {% if products_card.featured_image %}
         <div class="h-80 overflow-hidden">
@@ -28,25 +28,3 @@
     </div>
   </div>
 </div>
-
-<div id="productInfoModal" tabIndex="-1" aria-hidden="true">
-  <div>
-    <div>
-      <div></div>
-      <div></div>
-      <button type="button" data-></button>
-    </div>
-  </div>
-</div>
-
-<script>
-  var productInfoAnchors = document.querySelectorAll("#productInfoAnchor");
-  
-  if (productInfoAnchors.length > 0) {
-    productInfoAnchors.forEach(item => {
-      item.addEventListener("click", (event) => {
-        console.log("clicked")
-      })
-    })
-  }
-</script>

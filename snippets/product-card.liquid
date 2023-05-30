@@ -32,6 +32,8 @@
 <script>
   var productInfoAnchors = document.querySelectorAll("#productInfoAnchor")
   if (productInfoAnchors.length > 0) {
-    productInfoAnchors.foreach()
+    productInfoAnchors.foreach(item => {
+      item.addEventListener("click", event => console.log("click")
+    })
   }
 </script>
